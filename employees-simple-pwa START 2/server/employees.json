@@ -449,36 +449,6 @@
         "large": "images/portraits/women/61.jpg"
       },
       "nat": "NL"
-    },
-    {
-      "id": 17,
-      "gender": "female",
-      "name": {
-        "title": "Mrs",
-        "first": "Alisa",
-        "last": "Ahonen"
-      },
-      "location": {
-        "street": "7429 nordenskiöldinkatu",
-        "city": "savitaipale",
-        "state": "uusimaa",
-        "postcode": 11260
-      },
-      "email": "alisa.ahonen@example.com",
-      "dob": {
-        "date": "1971-10-24T00:15:30Z",
-        "age": 47
-      },
-      "registered": {
-        "date": "2014-02-10T23:42:42Z",
-        "age": 5
-      },
-      "phone": "03-829-130",
-      "cell": "045-333-66-56",
-      "picture": {
-        "large": "images/portraits/women/88.jpg"
-      },
-      "nat": "FI"
     }
   ]
 }
