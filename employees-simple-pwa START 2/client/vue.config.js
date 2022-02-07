@@ -1,4 +1,6 @@
+const path = require('path');
 module.exports = {
+  outputDir: path.resolve(__dirname, '../server/public'),
   pwa: {
     workboxPluginMode: 'InjectManifest',
     workboxOptions: {
@@ -11,10 +13,4 @@ module.exports = {
       background_color: '#28c2ff',
     },
   },
-};
-
-const path = require('path');
-module.exports = {
-  outputDir: path.resolve(__dirname, '../server/public'),
-  // ...
 };
