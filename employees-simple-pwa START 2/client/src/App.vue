@@ -5,7 +5,6 @@
     <ButtonGet @get="fetchData"></ButtonGet>
     <CardView :employees="employees" @del="delEmployee"></CardView>
   </div>
-  <!-- Aufgabe 2: Um 5ms -->
 </template>
 
 <script>
