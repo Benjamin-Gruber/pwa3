@@ -1,4 +1,4 @@
-importScripts("/precache-manifest.dadd14fd436cd8c443e1326e62ffdaeb.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("/precache-manifest.0ecfcce36af9a7ec76c1517f73016dc5.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 /* global workbox */
 if (workbox) {
@@ -7,11 +7,18 @@ if (workbox) {
   workbox.precaching.precacheAndRoute(self.__precacheManifest);
   workbox.routing.registerRoute(
     '/employees',
-    new workbox.strategies.NetworkFirst({
+    new workbox.strategies.CacheFirst({
       cacheName: 'roberts-cache',
     }),
-  ); 
+  );
 } else {
   console.log(`Workbox didn't load`);
 }
+
+workbox.routing.registerRoute(
+  new RegExp('/images/.*.jpg'),
+  new workbox.strategies.StaleWhileRevalidate({
+    cacheName: 'roberts-image-cache',
+  }),
+);
 
