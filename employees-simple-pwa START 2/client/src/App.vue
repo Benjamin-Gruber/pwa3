@@ -1,5 +1,6 @@
 <template>
   <div id="app" class="container d-flex flex-column justify-content-center align-items-center mt-5">
+    <h1>Employees</h1>
     <img src="/images/employees.jpg" height="250" class="mb-4" alt="asdfdsa">
     <ButtonGet @get="fetchData"></ButtonGet>
     <CardView :employees="employees" @del="delEmployee"></CardView>
